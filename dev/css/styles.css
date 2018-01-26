@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; }
+
+nav {
+  background-color: #c24848;
+  width: 100vw;
+  height: 50px; }
+  nav ul li {
+    display: inline; }
+
+body {
+  width: 100vw;
+  margin: 0; }
