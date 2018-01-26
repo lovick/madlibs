@@ -1,0 +1,21 @@
+$navColor: rgb(194, 72, 72);
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: $navColor;
+    width: 100vw;
+    height: 50px;
+    ul {
+        li {
+            display: inline;
+        }
+    }
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+}
