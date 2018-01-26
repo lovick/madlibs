@@ -1,2 +1,2 @@
-#Mad Libs
-This is studio 1 for DES 157. It's a mad libs generator.
+# Mad Libs
+This is studio 1 for DES 157. It's a mad libs generator using Javascript, LESS, and HTML5.
