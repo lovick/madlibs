@@ -10,11 +10,13 @@ $boxHeight: 35%;
 nav, footer {
     height: 50px;
     ul {
+        padding: 0 20px;
         header {
             display: inline;
         }
         li {
             display: inline;
+            padding-right: 15px;
         }
     }
     form {
@@ -38,22 +40,131 @@ section {
     border-radius: 5px;
     h1 {
         margin: 0;
+        padding-bottom: 10px;
     }
     button {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
         width: 75px;
         height: 35px;
+        margin-left: -37.5px;
+        margin-top: -17.5px;
     }
+    table {
+        margin: 0 auto;
+    }
+    box-shadow: 3px 5px;
+}
+
+input, select, button {
+    padding: 5px;
+}
+input {
+    margin-left: 5px;
 }
 
 body {
     margin: 0;
     width: 100vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+td.left {
+    vertical-align: middle;
+    text-align: right;
+}
+
+.monsterHunter {
+    background-color: rgba(13, 54, 64, 1);
+    color: rgba(216, 210, 147, 1);
+    a {
+        text-decoration: none;
+        color: rgba(13, 54, 64, 1);
+        &:hover {
+            color: rgba(235, 157, 46, 1);
+        }
+    }
+    input, select, button {
+        background-color: rgba(13, 54, 64, 1);
+        color: rgba(216, 210, 147, 1);
+        outline-color: rgba(235, 157, 46, 1);
+    }
+}
+.monsterHunter.background {
     background:
-        linear-gradient(to right,
-            rgba(214, 120, 13, 0.678),
-            rgba(255, 0, 0, 0.45)
+        linear-gradient(
+            to right,
+            rgba(235, 157, 46, 0.67),
+            rgba(216, 210, 147, 0.55)
         ),
         url('../images/mhworld.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
+}
+
+.pizza {
+    background-color: rgba(28, 29, 44, 1);
+    color: rgba(124, 208, 251, 1);
+    a {
+        text-decoration: none;
+        color: rgba(124, 208, 251, 1);
+        &:hover {
+            color: rgba(28, 29, 44, 1);
+        }
+    }
+    input, select, button {
+        background-color: rgba(124, 208, 251, 1);
+        color: rgba(28, 29, 44, 1);
+        outline-color: rgba(172, 36, 28, 1);
+    }
+}
+.pizza.background {
+    background:
+        linear-gradient(
+            to right,
+            rgba(172, 36, 28, 0.65),
+            rgba(28, 29, 44, 0.56)
+        ),
+        url('../images/pizza.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.zelda {
+    background-color: rgba(52, 71, 80, 1);
+    color: rgba(247, 228, 168, 1);
+    a {
+        text-decoration: none;
+        color: rgba(28, 29, 44, 1);
+        &:hover {
+            color: rgba(124, 208, 251, 1);
+        }
+    }
+    input, select, button {
+        background-color: rgba(52, 71, 80, 1);
+        color: rgba(247, 228, 168, 1);
+        outline-color: rgba(247, 228, 168, 1);;
+    }
+}
+.zelda.background {
+    background:
+        linear-gradient(
+            to right,
+            rgba(247, 228, 168, 0.65),
+            rgba(85, 106, 158, 0.55)
+        ),
+        url('../images/zelda.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media screen and (max-height: 650px) {
+    section {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        width: auto;
+    }
 }

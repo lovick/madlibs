@@ -4,10 +4,13 @@
 
 nav, footer {
   height: 50px; }
-  nav ul header, footer ul header {
-    display: inline; }
-  nav ul li, footer ul li {
-    display: inline; }
+  nav ul, footer ul {
+    padding: 0 20px; }
+    nav ul header, footer ul header {
+      display: inline; }
+    nav ul li, footer ul li {
+      display: inline;
+      padding-right: 15px; }
   nav form, footer form {
     float: right; }
 
@@ -23,16 +26,93 @@ section {
   height: 35%;
   background-color: #38da98;
   padding: 15px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 3px 5px; }
   section h1 {
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 10px; }
   section button {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
     width: 75px;
-    height: 35px; }
+    height: 35px;
+    margin-left: -37.5px;
+    margin-top: -17.5px; }
+  section table {
+    margin: 0 auto; }
+
+input, select, button {
+  padding: 5px; }
+
+input {
+  margin-left: 5px; }
 
 body {
   margin: 0;
   width: 100vw;
-  background: linear-gradient(to right, rgba(214, 120, 13, 0.678), rgba(255, 0, 0, 0.45)), url("../images/mhworld.jpg") no-repeat center center fixed;
-  background-size: cover;
   font-family: 'Ubuntu', sans-serif; }
+
+td.left {
+  vertical-align: middle;
+  text-align: right; }
+
+.monsterHunter {
+  background-color: #0d3640;
+  color: #d8d293; }
+  .monsterHunter a {
+    text-decoration: none;
+    color: #0d3640; }
+    .monsterHunter a:hover {
+      color: #eb9d2e; }
+  .monsterHunter input, .monsterHunter select, .monsterHunter button {
+    background-color: #0d3640;
+    color: #d8d293;
+    outline-color: #eb9d2e; }
+
+.monsterHunter.background {
+  background: linear-gradient(to right, rgba(235, 157, 46, 0.67), rgba(216, 210, 147, 0.55)), url("../images/mhworld.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.pizza {
+  background-color: #1c1d2c;
+  color: #7cd0fb; }
+  .pizza a {
+    text-decoration: none;
+    color: #7cd0fb; }
+    .pizza a:hover {
+      color: #1c1d2c; }
+  .pizza input, .pizza select, .pizza button {
+    background-color: #7cd0fb;
+    color: #1c1d2c;
+    outline-color: #ac241c; }
+
+.pizza.background {
+  background: linear-gradient(to right, rgba(172, 36, 28, 0.65), rgba(28, 29, 44, 0.56)), url("../images/pizza.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.zelda {
+  background-color: #344750;
+  color: #f7e4a8; }
+  .zelda a {
+    text-decoration: none;
+    color: #1c1d2c; }
+    .zelda a:hover {
+      color: #7cd0fb; }
+  .zelda input, .zelda select, .zelda button {
+    background-color: #344750;
+    color: #f7e4a8;
+    outline-color: #f7e4a8; }
+
+.zelda.background {
+  background: linear-gradient(to right, rgba(247, 228, 168, 0.65), rgba(85, 106, 158, 0.55)), url("../images/zelda.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+@media screen and (max-height: 650px) {
+  section {
+    height: auto;
+    width: auto; } }
+
+@media screen and (max-width: 1000px) {
+  section {
+    width: auto; } }
