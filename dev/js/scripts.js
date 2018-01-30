@@ -12,7 +12,7 @@ function begin() {
                 <label for="animal">Type of Animal:</label>
             </td>
             <td>
-                <input type="text" name="animal" value="cow">
+                <input type="text" name="animal" value="cow" required>
             </td>
         </tr>
         <tr>
@@ -20,7 +20,7 @@ function begin() {
                 <label for="adj">Adjective:</label>
             </td>
             <td>
-                <input type="text" name="adj" value="slow">
+                <input type="text" name="adj" value="slow" required>
             </td>
         </tr>
         <tr>
@@ -28,7 +28,7 @@ function begin() {
                 <label for="envir">Environment:</label>
             </td>
             <td>
-                <input type="text" name="envir" value="plains">
+                <input type="text" name="envir" value="plains" required>
             </td>
         </tr>
         <tr>
@@ -36,7 +36,7 @@ function begin() {
                 <label for="action">Action:</label>
             </td>
             <td>
-                <input type="text" name="action" value="eating">
+                <input type="text" name="action" value="eating" required>
             </td>
         </tr>
         <tr>
