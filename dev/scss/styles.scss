@@ -1,21 +1,59 @@
-$navColor: rgb(194, 72, 72);
+$boxWidth: 35%;
+$boxHeight: 35%;
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
     box-sizing: border-box;
 }
 
-nav {
-    background-color: $navColor;
-    width: 100vw;
+nav, footer {
     height: 50px;
     ul {
+        header {
+            display: inline;
+        }
         li {
             display: inline;
         }
     }
+    form {
+        float: right;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+section {
+    position: fixed;
+    top: 50% - ($boxHeight/2);
+    left: 50% - ($boxWidth/2);
+    width: $boxWidth;
+    height: $boxHeight;
+    background-color: #38da98;
+    padding: 15px;
+    border-radius: 5px;
+    h1 {
+        margin: 0;
+    }
+    button {
+        width: 75px;
+        height: 35px;
+    }
 }
 
 body {
-    width: 100vw;
     margin: 0;
+    width: 100vw;
+    background:
+        linear-gradient(to right,
+            rgba(214, 120, 13, 0.678),
+            rgba(255, 0, 0, 0.45)
+        ),
+        url('../images/mhworld.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
 }

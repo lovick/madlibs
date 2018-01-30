@@ -3,30 +3,40 @@
     <head>
         <meta charset="utf-8">
         <Title>Mad Libs</Title>
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript" src="js/scripts.js"></script>
     </head>
 
     <body>
         <nav>
             <ul>
-                <li>home</li>
+                <li>restart</li>
                 <li>test</li>
+                <li>
+                    <form name="typeForm">
+                        <select name="type">
+                            <option value="Monster Hunter">Monster Hunter</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Zelda">Zelda</option>
+                        </select>
+                        <input type="submit" name="submit" value="Change category!">
+                    </form>
+                </li>
             </ul>
         </nav>
 
-        <div id="body">
-            <header>
-
-            </header>
-            <section id="main">
-
-            </section>
-        </div>
+        <section id="main">
+            <h1>Monster Hunter Mad Libs</h1>
+            <button onclick="changeBox()">Begin</button>
+        </section>
 
         <footer>
-            
+            <ul>
+                <li>GitHub</li>
+                <li>LinkedIn</li>
+            </ul>
         </footer>
     </body>
 </html>
